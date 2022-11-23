@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_men2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.fitnessapp.Men.Men2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/chestworkout1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jumpingjacks"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/jumpingjack"
+                        android:text="Jumping jack"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:30"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/jumpingjack"
+                        android:layout_toRightOf="@+id/gifarm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/chestworkout2"
+                android:layout_below="@id/chestworkout1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/incline"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/incline"
+                        android:text="Incline push-up"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x6"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/incline"
+                        android:layout_toRightOf="@+id/gifarm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/chestworkout3"
+                android:layout_below="@id/chestworkout2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pushup"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/pusp"
+                        android:text="Push-up"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x4"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/pusp"
+                        android:layout_toRightOf="@+id/gifarm3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/chestworkout4"
+                android:layout_below="@id/chestworkout3"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="x4"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/wide"
+                        android:layout_toRightOf="@+id/gifarm4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2" />
+
+                    <TextView
+                        android:id="@+id/wide"
+                        android:text="Wide arm              push-up"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/gifarm4"
+                        android:layout_alignStart="@+id/textView2" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm4"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/widearm"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/chestworkout5"
+                android:layout_below="@id/chestworkout4"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/triceps"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/tricep"
+                        android:text="Tricep dips"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x6"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/tricep"
+                        android:layout_toRightOf="@+id/gifarm5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/chestworkout6"
+                android:layout_below="@id/chestworkout5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kneepush"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="x4"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/knee"
+                        android:layout_toRightOf="@+id/gifarm6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/knee"
+                        android:text="Knee push-up"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/gifarm6"
+                        android:layout_alignStart="@+id/textView3" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+  >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_training"
+            android:icon="@drawable/trainingplans"
+            android:title="Training Plans" />
+        <item
+            android:id="@+id/nav_discover"
+            android:icon="@drawable/discover"
+            android:title="Discover" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/report"
+            android:title="Report" />
+        <item
+            android:id="@+id/nav_alarm"
+            android:icon="@drawable/ic_alarm"
+            android:title="Alarm"/>
+    </group>
+
+    <item android:title="More">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_restart"
+                android:icon="@drawable/restart"
+                android:title="Reset" />
+        </menu>
+    </item>
+
+</menu>

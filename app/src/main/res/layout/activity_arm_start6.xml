@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_arm_start6"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#11000000"
+
+    tools:context="com.example.user.fitnessapp.MenTimer.ArmTimer.Start.ArmStart6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/backarma6"
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/ic_arrow_back2" />
+
+
+
+        <TextView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="170dp"
+            android:background="#FFF" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginLeft="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/triceps" />
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/info"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/arminfoa6" />
+
+
+        <TextView
+            android:text="x 4"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/gif"
+            android:id="@+id/abdominal16"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/kneestart1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp"
+            android:layout_below="@+id/abdominal16">
+
+            <RelativeLayout
+                android:background="#0000FF"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/correct"
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KNEE PUSH-UP"
+            android:layout_marginTop="90dp"
+            android:layout_centerHorizontal="true"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

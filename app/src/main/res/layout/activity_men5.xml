@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_men5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.fitnessapp.Men.Men5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jumpingjacks"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/jumpingjack"
+                        android:text="Jumping jack"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:30"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/jumpingjack"
+                        android:layout_toRightOf="@+id/gifarm1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout2"
+                android:layout_below="@id/sandbworkout1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/armraise"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/incline"
+                        android:text="Arm Raises"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x16"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/incline"
+                        android:layout_toRightOf="@+id/gifarm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout3"
+                android:layout_below="@id/sandbworkout2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rhomboid"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/pusp"
+                        android:text="Rhomboid Pulls"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x14"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/pusp"
+                        android:layout_toRightOf="@+id/gifarm3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout4"
+                android:layout_below="@id/sandbworkout3"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="x4"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/wide"
+                        android:layout_toRightOf="@+id/gifarm4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView2" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm4"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sidearm"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/wide"
+                        android:text="Side Arm Raises"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/gifarm4"
+                        android:layout_toEndOf="@+id/gifarm4" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout5"
+                android:layout_below="@id/sandbworkout4"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/kneepush"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/tricep"
+                        android:text="Knee Push-up"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x14"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/tricep"
+                        android:layout_toRightOf="@+id/gifarm5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout6"
+                android:layout_below="@id/sandbworkout5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifarm6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/scissor"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="00:30"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/knee"
+                        android:layout_toRightOf="@+id/gifarm6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/knee"
+                        android:text="Arm Scissors"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/gifarm6"
+                        android:layout_toEndOf="@+id/gifarm6" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/sandbworkout7"
+                android:layout_below="@id/sandbworkout6"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/gifarm7"
+                        android:src="@drawable/cobra"
+                        android:scaleType="centerCrop"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/cobra"
+                        android:text="Child Pose"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifarm7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:30"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/cobra"
+                        android:layout_toRightOf="@+id/gifarm7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.fitnessapp"
+    android:versionName="1.2.0" android:versionCode="4">
+
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".Discover"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Training"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/app_discover"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".Main3Activity"
+            android:label="@string/app_alarm"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".Mens"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Womens"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Men.Men2"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Mens" />
+        <activity
+            android:name=".Men.Men3"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Mens" />
+        <activity
+            android:name=".Men.Men4"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Mens" />
+        <activity
+            android:name=".Men.Men5"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Mens" />
+        <activity
+            android:name=".Men.Men1"
+            android:launchMode="singleTop"
+            android:parentActivityName=".Mens" />
+        <activity
+            android:name=".Popup.Popupwindow1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Popup.Popupwindow8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".Splashscreen.Splashscreen"
+            android:theme="@style/AppTheme.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PopupArm.Arm1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupArm.Arm2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupArm.Arm3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupArm.Arm4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupArm.Arm5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupArm.Arm6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupChest.Chest1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupChest.Chest2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupChest.Chest3"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupChest.Chest4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupChest.Chest5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupChest.Chest6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg9"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg10"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg11"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg12"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg13"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupLeg.Leg14"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".PopupSandB.SB7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Ready.AbsReady8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.Start.AbsStart8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Ready.ChestReady1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Ready.ChestReady2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Ready.ChestReady3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Ready.ChestReady4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Ready.ChestReady5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Ready.ChestReady6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Start.ChestStart1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Start.ChestStart2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Start.ChestStart3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Start.ChestStart4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Start.ChestStart5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ChestTimer.Start.ChestStart6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.PopupInfoA1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.PopupInfo1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info2.PopupInfo2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info2.PopupInfoA2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info3.PopupInfo3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info3.PopupInfoA3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info4.PopupInfo4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info4.PopupInfoA4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info5.PopupInfo5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info5.PopupInfoA5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info6.PopupInfo6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info6.PopupInfoA6"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info7.PopupInfo7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info7.PopupInfoA7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info8.PopupInfo8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.AbsTimer.PopupInfo.Info1.Info8.PopupInfoA8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.Menuexita1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExit8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.MenuExit.Absmenu.MenuExita8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Ready.ArmReady1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Ready.ArmReady2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Ready.ArmReady3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Ready.ArmReady4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Ready.ArmReady5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Ready.ArmReady6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Start.ArmStart1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Start.ArmStart2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Start.ArmStart3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Start.ArmStart4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Start.ArmStart5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.Start.ArmStart6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.DarkActionBar" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo1.InfoArm1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo1.InfoArm2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo2.InfoArm3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo2.InfoArm4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo3.InfoArm5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo3.InfoArm6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo4.InfoArm7"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo4.InfoArm8"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo5.InfoArm9"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo5.InfoArm10"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo6.InfoArm11"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo6.InfoArm12"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo7.InfoArm13"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.PopupInfoArm.ArmInfo7.InfoArm14"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.A.ArmA1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.A.ArmA2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.A.ArmA3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.A.ArmA4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.A.ArmA5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.A.ArmA6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.B.ArmB1"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.B.ArmB2"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.B.ArmB3"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.B.ArmB4"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.B.ArmB5"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <activity
+            android:name=".MenTimer.ArmTimer.ArmMenu.B.ArmB6"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.CustomTheme" />
+        <!--
+     ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A1.ChestMenu1" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A1.ChestMenu2" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A1.ChestMenu3" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A1.ChestMenu4" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A1.ChestMenu5" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A1.ChestMenu6" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A2.ChestMenus1" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A2.ChestMenus2" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A2.ChestMenus3" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A2.ChestMenus4" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A2.ChestMenus5" />
+        <activity android:name=".MenTimer.ChestTimer.ChestMenu.A2.ChestMenus6" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A1.ChestInfoA1" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A1.ChestInfoA2" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A1.ChestInfoA3" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A1.ChestInfoA4" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A1.ChestInfoA5" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A1.ChestInfoA6" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A2.ChestInfoB1" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A2.ChestInfoB2" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A2.ChestInfoB3" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A2.ChestInfoB4" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A2.ChestInfoB5" />
+        <activity android:name=".MenTimer.ChestTimer.ChestInfo.A2.ChestInfoB6"></activity>
+    </application>
+
+</manifest>

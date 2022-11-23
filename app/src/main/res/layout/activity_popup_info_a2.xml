@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_popup_info_a2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.user.fitnessapp.MenTimer.AbsTimer.PopupInfo.Info1.Info2.PopupInfoA2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/gif"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF" />
+
+        <TextView
+            android:id="@+id/gif2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_below="@+id/gif"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF" />
+
+
+        <TextView
+            android:id="@+id/abdominalpopupa2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/gif2"
+            android:layout_alignTop="@+id/gif2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="ABDOMINAL CRUNCHES"
+            android:textColor="#000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abdominalpopupa2"
+            android:layout_alignStart="@+id/gif2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:text="Lie on your back with your knees bent and your arms stretched forward.
+
+Then lift your upper body off the floor. Hold for a few seconds and slowly return them.
+
+It primarily works the rectus abdominis muscle and the obliques."
+            android:textColor="#000"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gifImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/gif"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="90dp"
+            android:layout_marginRight="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/abdominals" />
+
+        <ImageView
+            android:id="@+id/closeA2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/gif2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/close1" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

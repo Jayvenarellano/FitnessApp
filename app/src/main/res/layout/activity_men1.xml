@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_men1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.user.fitnessapp.Men.Men1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifview1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/jumpingjacks"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/jumpingjack"
+                        android:text="Jumping jack"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:20"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/jumpingjack"
+                        android:layout_toRightOf="@+id/gifview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w2"
+                android:layout_below="@id/w1"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifview2"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/abdominals"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"/>
+                    <TextView
+                        android:id="@+id/Abdominalcrunches"
+                        android:text="Abdominal       Crunches"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x16"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/Abdominalcrunches"
+                        android:layout_toRightOf="@+id/gifview2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w3"
+                android:layout_below="@id/w2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/Russiantwist"
+                        android:text="Russian Twist"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x20"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/Russiantwist"
+                        android:layout_toRightOf="@+id/gifview3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifview3"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/russiantwist"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w4"
+                android:layout_below="@id/w3"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifview4"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/mountainclimber"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:text="x16"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/mountainclimber"
+                        android:layout_toRightOf="@+id/gifview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4" />
+
+                    <TextView
+                        android:id="@+id/mountainclimber"
+                        android:text="Mountain Climber"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/gifview4"
+                        android:layout_alignStart="@+id/textView4" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w5"
+                android:layout_below="@id/w4"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifview5"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/heeltouch"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/heeltouch"
+                        android:text="Heel Touch"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:20"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/heeltouch"
+                        android:layout_toRightOf="@+id/gifview5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w6"
+                android:layout_below="@id/w5"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/gifview6"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/legraises"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/legraises"
+                        android:text="Leg Raises"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="x16"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/legraises"
+                        android:layout_toRightOf="@+id/gifview6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w7"
+                android:layout_below="@id/w6"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/gifview7"
+                        android:src="@drawable/plank"
+                        android:scaleType="centerCrop"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+
+
+                    <TextView
+                        android:id="@+id/plank"
+                        android:text="Plank"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:20"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/plank"
+                        android:layout_toRightOf="@+id/gifview7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/w8"
+                android:layout_below="@id/w7"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="5dp"
+                android:layout_rowWeight="1"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:id="@+id/gifview8"
+                        android:src="@drawable/cobra"
+                        android:scaleType="centerCrop"
+                        android:layout_width="150dp"
+                        android:layout_height="125dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentStart="true" />
+                    <TextView
+                        android:id="@+id/cobrastretch"
+                        android:text="Cobra stretch"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/gifview8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text="00:30"
+                        android:textSize="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/cobrastretch"
+                        android:layout_toRightOf="@+id/gifview8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
